@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>
+    Registration
+  </title>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/index.js"></script>
+  <script src="js/formValidation.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container signin">
+    <a href="index.php"><button class="btn"><i class="fa fa-home"></i> Home </button></a>
+    <h1>Registration</h1>
+    <div>
+      <input type="radio" id="customer" name="selectForm" onclick="showForm(this)" value="customer" checked>
+      <label for="customer">Customer</label>
+    </div>
+
+    <div>
+      <input type="radio" id="agency" name="selectForm" onclick="showForm(this)" value="agency">
+      <label for="agency">Rental Agency</label>
+    </div>
+  </div>
+
+  <form id="customerForm" name="customerForm" action="php/registration.php" onsubmit="return customerForm1()"
+    method="post">
+    <div class="container">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email Id:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="pass">Password:</label><br>
+      <input type="password" id="pass" name="pass"><br><br>
+      <input type="submit" value="Register" class="registerbtn">
+    </div>
+  </form>
+
+  <form id="agencyForm" name="agencyForm" action="php/registration.php" onsubmit="return agencyForm1()" method="post"
+    style="display:none;">
+    <div class="container">
+      <label for="aname">Agency name:</label><br>
+      <input type="text" id="aname" name="aname"><br>
+      <label for="email">Email Id:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="pass">Password:</label><br>
+      <input type="password" id="pass" name="pass"><br><br>
+      <input type="submit" value="Register" class="registerbtn">
+    </div>
+  </form>
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div>
+</body>
+
+</html>

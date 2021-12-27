@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>
+    Registration
+  </title>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container signin">
+    <a href="index.php"><button class="btn"><i class="fa fa-home"></i> Home </button></a>
+    <h1>Login</h1>
+  </div>
+  <form id="login" action="php/login.php" method="post">
+    <div class="container">
+      <label for="email">Email Id:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="pass">Password:</label><br>
+      <input type="password" id="pass" name="pass"><br><br>
+      <input type="submit" value="Login" class="registerbtn">
+    </div>
+  </form>
+  <div class="container signin">
+    <p><a href="registration.html">Register</a>.</p>
+  </div>
+</body>
+
+</html>

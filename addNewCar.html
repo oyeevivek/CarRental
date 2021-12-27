@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>
+    Add New Cars
+  </title>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/formValidation.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <a href="index.php"><button class="btn"><i class="fa fa-home"></i> Home </button></a>
+  <form id="addNewCarForm" name="addNewCarForm" action="php/addNewCar.php" method="post"
+    onsubmit="return editAddCar('addNewCarForm')">
+    <div class="container">
+      <h1>Add New Car</h1>
+      <label for="vmodel">Vehicle Model:</label><br>
+      <input type="text" id="vmodel" name="vmodel"><br>
+      <label for="vnum">Vehicle Number:</label><br>
+      <input type="text" id="vnum" name="vnum"><br><br>
+      <label for="scap">Seating Capacity</label><br>
+      <input type="text" id="scap" name="scap"><br><br>
+      <label for="rpd">Rent Per Day</label><br>
+      <input type="text" id="rpd" name="rpd"><br><br>
+      <input type="submit" value="Add Car" class="registerbtn">
+    </div>
+  </form>
+</body>
+
+</html>
